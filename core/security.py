@@ -8,9 +8,9 @@ from core.config import settings
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # JWT settings (akan digunakan nanti)
-SECRET_KEY = "your-secret-key-here-change-in-production"
+SECRET_KEY = "d3nah-app-010226-smkbpp"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """Verifikasi password"""

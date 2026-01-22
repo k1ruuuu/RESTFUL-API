@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     # Database Settings
     DB_HOST: str = "localhost"
     DB_USER: str = "root"
-    DB_PASSWORD: str = ""
+    DB_PASSWORD: str = "" # wdymnL0L@!!
     DB_NAME: str = "denah"
     
     # CORS Settings
