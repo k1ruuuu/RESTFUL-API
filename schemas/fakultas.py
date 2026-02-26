@@ -79,12 +79,9 @@ class FKTarbiyahUpdate(BaseModel):
     subUnit: Optional[str] = None
     ruangan: Optional[str] = None
     lantai: Optional[int] = None
-<<<<<<< HEAD
     gedung: Optional[str] = None
-=======
     lokasi: Optional[str] = None
     Bagian: Optional[str] = None
->>>>>>> dcfabac (API)
     ukuranR: Optional[int] = None
     ket: Optional[str] = None
 
@@ -108,12 +105,8 @@ class FKTeknikUpdate(BaseModel):
     subUnit: Optional[str] = None
     ruangan: Optional[str] = None
     lantai: Optional[int] = None
-<<<<<<< HEAD
-    gedung: Optional[str] = None
-=======
     lokasi: Optional[str] = None
     Bagian: Optional[str] = None
->>>>>>> dcfabac (API)
     ukuranR: Optional[int] = None
     ket: Optional[str] = None
 
@@ -137,12 +130,8 @@ class FKHukumUpdate(BaseModel):
     subUnit: Optional[str] = None
     ruangan: Optional[str] = None
     lantai: Optional[int] = None
-<<<<<<< HEAD
-    gedung: Optional[str] = None
-=======
     lokasi: Optional[str] = None
     Bagian: Optional[str] = None
->>>>>>> dcfabac (API)
     ukuranR: Optional[int] = None
     ket: Optional[str] = None
 
@@ -166,12 +155,8 @@ class FKFikomUpdate(BaseModel):
     subUnit: Optional[str] = None
     ruangan: Optional[str] = None
     lantai: Optional[int] = None
-<<<<<<< HEAD
-    gedung: Optional[str] = None
-=======
     lokasi: Optional[str] = None
     Bagian: Optional[str] = None
->>>>>>> dcfabac (API)
     ukuranR: Optional[int] = None
     ket: Optional[str] = None
 
@@ -195,12 +180,8 @@ class FKUnivUpdate(BaseModel):
     subUnit: Optional[str] = None
     ruangan: Optional[str] = None
     lantai: Optional[int] = None
-<<<<<<< HEAD
-    gedung: Optional[str] = None
-=======
     lokasi: Optional[str] = None
     Bagian: Optional[str] = None
->>>>>>> dcfabac (API)
     ukuranR: Optional[int] = None
     ket: Optional[str] = None
 
