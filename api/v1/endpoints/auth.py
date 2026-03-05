@@ -54,11 +54,20 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         raise credentials_exception
 
 def get_current_admin(current_user: dict = Depends(get_current_user)):
-    """Ensure user is admin"""
-    if current_user.get("role") != "admin":
+    """Ensure user is admin or developer"""
+    if current_user.get("role") not in ["admin", "developer"]:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Admin privileges required"
+        )
+    return current_user
+
+def get_current_developer(current_user: dict = Depends(get_current_user)):
+    """Ensure user is developer only"""
+    if current_user.get("role") != "developer":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Developer privileges required"
         )
     return current_user
 

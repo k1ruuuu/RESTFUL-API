@@ -15,7 +15,7 @@ class HydrantAparBase(BaseModel):
     proteksi: ProteksiType = Field(alias="Proteksi")
     lantai: str = Field(alias="Lantai")
     gedung: str = Field(alias="Gedung")
-    kapasitas: Optional[int] = Field(default=None, alias="Kapasitas")
+    kapasitas: Optional[str] = Field(default=None, alias="Kapasitas")
     tekanan: Optional[int] = Field(default=None, alias="Tekanan")
     keterangan: Optional[str] = Field(default=None, alias="Keterangan")
     status: Optional[StatusType] = Field(default="Aktif", alias="Status")
@@ -28,7 +28,7 @@ class HydrantAparUpdate(BaseModel):
     proteksi: Optional[ProteksiType] = None
     lantai: Optional[str] = None
     gedung: Optional[str] = None
-    kapasitas: Optional[int] = None
+    kapasitas: Optional[str] = None
     tekanan: Optional[int] = None
     keterangan: Optional[str] = None
     status: Optional[StatusType] = None
