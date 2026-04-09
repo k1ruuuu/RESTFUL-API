@@ -2,9 +2,9 @@ from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from datetime import datetime, timedelta
 from schemas.activity_user import ActivityInDB
-from services.activity_user import activity_service
-from api.deps import get_current_user
-from api.v1.endpoints.auth import get_current_admin  # admin + developer
+from services.activity_service import activity_service
+
+from api.v1.endpoints.auth import get_current_admin, get_current_user  # admin + developer
 import logging
 
 logger = logging.getLogger(__name__)

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.v1.endpoints import users, fk_ekonomi, fk_syariah, fk_tarbiyah, fk_teknik, fk_hukum, fk_fikom, health, hydrantApar, history_hydrantApar, auth, mainten, patch_notif, custom_message
+from api.v1.endpoints import users, fk_ekonomi, fk_syariah, fk_tarbiyah, fk_teknik, fk_hukum, fk_fikom, health, hydrantApar, history_hydrantApar, auth, mainten, patch_notif, custom_message, activity_user
 
 api_router = APIRouter()
 
@@ -17,3 +17,4 @@ api_router.include_router(auth.router)
 api_router.include_router(mainten.router)
 api_router.include_router(patch_notif.router)
 api_router.include_router(custom_message.router)
+api_router.include_router(activity_user.router)
